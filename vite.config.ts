@@ -24,9 +24,6 @@ function sitemapPlugin(): Plugin {
       targetFile = 'privacy.html';
     } else if (url === '/contact' || url === '/contact.html') {
       targetFile = 'contact.html';
-    } else if (url === '/favicon.svg') {
-      targetFile = 'favicon.svg';
-      contentType = 'image/svg+xml';
     } else if (url === '/favicon.png') {
       targetFile = 'favicon.png';
       contentType = 'image/png';

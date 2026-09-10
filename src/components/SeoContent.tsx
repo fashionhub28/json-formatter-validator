@@ -1,5 +1,4 @@
 import React from 'react';
-import { HelpCircle, ChevronDown } from 'lucide-react';
 
 export const SeoContent: React.FC = () => {
   return (
@@ -78,95 +77,50 @@ export const SeoContent: React.FC = () => {
 
         {/* Section 6: Frequently Asked Questions */}
         <article className="rounded-xl bg-white border border-slate-200 p-6 sm:p-8 shadow-xs">
-          <div className="flex items-center gap-2.5 mb-6">
-            <div className="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center">
-              <HelpCircle className="w-4 h-4" />
-            </div>
-            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
-              Frequently Asked Questions
-            </h2>
-          </div>
+          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-6">
+            Frequently Asked Questions
+          </h2>
 
-          <div className="divide-y divide-slate-100 space-y-4 pt-1">
+          <div className="divide-y divide-slate-100 space-y-6 pt-1">
             {/* FAQ 1 */}
-            <details
-              open
-              className="group pt-4 first:pt-0 transition-colors"
-            >
-              <summary className="flex items-center justify-between gap-4 font-semibold text-base sm:text-lg text-slate-800 cursor-pointer list-none select-none hover:text-indigo-600 transition-colors">
-                <span>Is this JSON Formatter free?</span>
-                <ChevronDown className="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform flex-shrink-0" />
-              </summary>
-              <div className="mt-2.5 text-sm sm:text-base text-slate-600 leading-relaxed max-w-4xl">
-                <p>
-                  Yes. You can use the available JSON formatting and validation features directly in your web browser without installing a separate desktop application.
-                </p>
-              </div>
-            </details>
+            <div className="pt-4 first:pt-0">
+              <h3 className="font-semibold text-base sm:text-lg text-slate-900">
+                What is a JSON formatter?
+              </h3>
+              <p className="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed max-w-4xl">
+                A JSON formatter converts compact or difficult-to-read JSON into a clean, structured, and readable format.
+              </p>
+            </div>
 
             {/* FAQ 2 */}
-            <details
-              open
-              className="group pt-4 transition-colors"
-            >
-              <summary className="flex items-center justify-between gap-4 font-semibold text-base sm:text-lg text-slate-800 cursor-pointer list-none select-none hover:text-indigo-600 transition-colors">
-                <span>What is the difference between formatting and validation?</span>
-                <ChevronDown className="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform flex-shrink-0" />
-              </summary>
-              <div className="mt-2.5 text-sm sm:text-base text-slate-600 leading-relaxed max-w-4xl">
-                <p>
-                  Formatting makes JSON easier to read by adding indentation and structure. Validation checks whether the JSON follows the required syntax.
-                </p>
-              </div>
-            </details>
+            <div className="pt-6">
+              <h3 className="font-semibold text-base sm:text-lg text-slate-900">
+                How do I validate JSON?
+              </h3>
+              <p className="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed max-w-4xl">
+                Paste your JSON into the editor and select Validate JSON. The tool checks the JSON syntax and indicates whether the data is valid.
+              </p>
+            </div>
 
             {/* FAQ 3 */}
-            <details
-              open
-              className="group pt-4 transition-colors"
-            >
-              <summary className="flex items-center justify-between gap-4 font-semibold text-base sm:text-lg text-slate-800 cursor-pointer list-none select-none hover:text-indigo-600 transition-colors">
-                <span>Can I minify JSON?</span>
-                <ChevronDown className="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform flex-shrink-0" />
-              </summary>
-              <div className="mt-2.5 text-sm sm:text-base text-slate-600 leading-relaxed max-w-4xl">
-                <p>
-                  Yes. The Minify feature removes unnecessary whitespace and line breaks to create a more compact JSON representation.
-                </p>
-              </div>
-            </details>
+            <div className="pt-6">
+              <h3 className="font-semibold text-base sm:text-lg text-slate-900">
+                Is this JSON formatter free?
+              </h3>
+              <p className="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed max-w-4xl">
+                Yes. The JSON formatting, validation, beautify, and minify features are available directly in the browser.
+              </p>
+            </div>
 
             {/* FAQ 4 */}
-            <details
-              open
-              className="group pt-4 transition-colors"
-            >
-              <summary className="flex items-center justify-between gap-4 font-semibold text-base sm:text-lg text-slate-800 cursor-pointer list-none select-none hover:text-indigo-600 transition-colors">
-                <span>What happens if my JSON is invalid?</span>
-                <ChevronDown className="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform flex-shrink-0" />
-              </summary>
-              <div className="mt-2.5 text-sm sm:text-base text-slate-600 leading-relaxed max-w-4xl">
-                <p>
-                  The validator indicates that the JSON is invalid and provides error information that can help you locate the syntax problem.
-                </p>
-              </div>
-            </details>
-
-            {/* FAQ 5 */}
-            <details
-              open
-              className="group pt-4 transition-colors"
-            >
-              <summary className="flex items-center justify-between gap-4 font-semibold text-base sm:text-lg text-slate-800 cursor-pointer list-none select-none hover:text-indigo-600 transition-colors">
-                <span>Do I need to install software?</span>
-                <ChevronDown className="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform flex-shrink-0" />
-              </summary>
-              <div className="mt-2.5 text-sm sm:text-base text-slate-600 leading-relaxed max-w-4xl">
-                <p>
-                  No. The tool runs in a web browser, so you can use it without installing a separate JSON formatting application.
-                </p>
-              </div>
-            </details>
+            <div className="pt-6">
+              <h3 className="font-semibold text-base sm:text-lg text-slate-900">
+                Is my JSON uploaded to a server?
+              </h3>
+              <p className="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed max-w-4xl">
+                No. The tool processes JSON locally in the user&apos;s browser and does not upload the JSON to a server.
+              </p>
+            </div>
           </div>
         </article>
       </div>
