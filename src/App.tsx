@@ -4,6 +4,7 @@ import { ActionBar } from './components/ActionBar';
 import { StatusBanner } from './components/StatusBanner';
 import { InputPanel } from './components/InputPanel';
 import { OutputPanel } from './components/OutputPanel';
+import { SeoContent } from './components/SeoContent';
 import { formatJSON, validateJSON, SAMPLE_JSON } from './utils/jsonUtils';
 import { IndentOption, JSONValidationResult } from './types';
 
@@ -132,6 +133,9 @@ export default function App() {
             hasRunAction={hasRunAction}
           />
         </div>
+
+        {/* Informational SEO Content Guide */}
+        <SeoContent />
       </main>
 
       {/* Clean, responsive footer with page links for users and search engines */}

@@ -24,6 +24,15 @@ function sitemapPlugin(): Plugin {
       targetFile = 'privacy.html';
     } else if (url === '/contact' || url === '/contact.html') {
       targetFile = 'contact.html';
+    } else if (url === '/favicon.svg') {
+      targetFile = 'favicon.svg';
+      contentType = 'image/svg+xml';
+    } else if (url === '/favicon.png') {
+      targetFile = 'favicon.png';
+      contentType = 'image/png';
+    } else if (url === '/favicon.ico') {
+      targetFile = 'favicon.ico';
+      contentType = 'image/x-icon';
     } else if (url === '/google15b596f3b9a62c24.html' || (url.startsWith('/google') && url.endsWith('.html'))) {
       targetFile = url.replace(/^\//, '');
       contentType = 'text/html; charset=utf-8';
@@ -32,10 +41,11 @@ function sitemapPlugin(): Plugin {
     if (targetFile) {
       const filePath = path.resolve(__dirname, dir, targetFile);
       if (fs.existsSync(filePath)) {
-        let content = fs.readFileSync(filePath, 'utf-8');
+        const isBinary = contentType.startsWith('image/') && !contentType.includes('svg');
+        let content: string | Buffer = isBinary ? fs.readFileSync(filePath) : fs.readFileSync(filePath, 'utf-8');
 
         // Dynamically align domain for sitemap and robots if requested from a specific host
-        if (targetFile === 'sitemap.xml' || targetFile === 'robots.txt') {
+        if ((targetFile === 'sitemap.xml' || targetFile === 'robots.txt') && typeof content === 'string') {
           const rawHost = (req?.headers?.['x-forwarded-host'] || req?.headers?.['host'] || '') as string;
           const host = rawHost.split(',')[0].trim().split(':')[0];
           if (host && host !== 'localhost' && host !== '127.0.0.1') {

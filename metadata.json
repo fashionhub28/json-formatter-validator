@@ -1,5 +1,5 @@
 {
-  "name": "JSON Formatter & Validator",
+  "name": "JSON Formatter & Validator Online",
   "description": "A fast, responsive, and clean browser tool to format, beautify, and validate JSON data with clear syntax error detection.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
