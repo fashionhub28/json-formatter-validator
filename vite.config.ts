@@ -30,6 +30,9 @@ function sitemapPlugin(): Plugin {
     } else if (url === '/favicon.ico') {
       targetFile = 'favicon.ico';
       contentType = 'image/x-icon';
+    } else if (url === '/og-image.png' || url === '/og-image.jpg' || url === '/og-image.jpeg') {
+      targetFile = 'og-image.png';
+      contentType = 'image/png';
     } else if (url === '/google15b596f3b9a62c24.html' || (url.startsWith('/google') && url.endsWith('.html'))) {
       targetFile = url.replace(/^\//, '');
       contentType = 'text/html; charset=utf-8';
