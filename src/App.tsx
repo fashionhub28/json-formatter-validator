@@ -1,3 +1,4 @@
+```tsx
 import React, { useState, useEffect, useCallback } from 'react';
 import { Header } from './components/Header';
 import { ActionBar } from './components/ActionBar';
@@ -157,7 +158,24 @@ export default function App() {
             <a href="/contact.html" className="hover:text-indigo-600 transition-colors">Contact Us</a>
           </nav>
         </div>
+
+        {/* Product Hunt Featured Badge */}
+        <div className="mt-4 flex justify-center">
+          <a
+            href="https://www.producthunt.com/products/json-formatter-validator-4?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-json-formatter-validator-6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              alt="JSON Formatter & Validator - Format, validate, beautify and minify JSON instantly"
+              width="250"
+              height="54"
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1253872&theme=light&t=1789744595669"
+            />
+          </a>
+        </div>
       </footer>
     </div>
   );
 }
+```
