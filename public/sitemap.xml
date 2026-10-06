@@ -3,28 +3,35 @@
 
   <url>
     <loc>https://json-formatter-validator-osh2.vercel.app/</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://json-formatter-validator-osh2.vercel.app/about.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://json-formatter-validator-osh2.vercel.app/privacy.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://json-formatter-validator-osh2.vercel.app/terms.html</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://json-formatter-validator-osh2.vercel.app/contact.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

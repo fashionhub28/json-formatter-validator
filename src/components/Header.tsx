@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
         <div className="flex items-center gap-2 self-start sm:self-auto">
           <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-medium">
             <ShieldCheck className="w-3.5 h-3.5" />
-            <span>100% Client-Side</span>
+            <span>In-Browser Processing</span>
           </div>
           <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-600 text-xs font-medium">
             <Zap className="w-3.5 h-3.5" />

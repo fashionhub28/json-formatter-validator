@@ -22,6 +22,8 @@ function sitemapPlugin(): Plugin {
       targetFile = 'about.html';
     } else if (url === '/privacy' || url === '/privacy.html') {
       targetFile = 'privacy.html';
+    } else if (url === '/terms' || url === '/terms.html') {
+      targetFile = 'terms.html';
     } else if (url === '/contact' || url === '/contact.html') {
       targetFile = 'contact.html';
     } else if (url === '/favicon.png') {

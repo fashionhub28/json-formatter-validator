@@ -5,43 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="alternate icon" href="/favicon.ico" />
 
     <link
       rel="canonical"
       href="https://json-formatter-validator-osh2.vercel.app/"
     />
 
-    <title>JSON Formatter & Validator - Format, Beautify & Validate JSON Online</title>
+    <title>JSON Formatter &amp; Validator - Format, Beautify &amp; Validate JSON Online</title>
 
     <meta
       name="description"
-      content="A fast, clean, and responsive browser tool to format, beautify, and validate JSON with detailed syntax error reporting."
+      content="A fast, clean browser-based JSON formatter and validator. Format, beautify, validate and minify JSON with helpful syntax error information."
     />
 
-    <meta property="og:title" content="JSON Formatter & Validator" />
+    <meta property="og:title" content="JSON Formatter &amp; Validator - Format, Beautify &amp; Validate JSON Online" />
     <meta
       property="og:description"
-      content="Format, beautify, and validate JSON data instantly in your browser."
+      content="A fast, clean browser-based JSON formatter and validator. Format, beautify, validate and minify JSON with helpful syntax error information."
     />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
       content="https://json-formatter-validator-osh2.vercel.app/"
     />
-    <meta property="og:site_name" content="JSON Formatter & Validator" />
+    <meta property="og:site_name" content="JSON Formatter &amp; Validator" />
     <meta
       property="og:image"
       content="https://json-formatter-validator-osh2.vercel.app/og-image.png"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="JSON Formatter & Validator" />
+    <meta property="og:image:alt" content="JSON Formatter &amp; Validator Preview" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="JSON Formatter & Validator" />
+    <meta name="twitter:title" content="JSON Formatter &amp; Validator - Format, Beautify &amp; Validate JSON Online" />
     <meta
       name="twitter:description"
-      content="Format, beautify, and validate JSON data instantly in your browser."
+      content="A fast, clean browser-based JSON formatter and validator. Format, beautify, validate and minify JSON with helpful syntax error information."
     />
     <meta
       name="twitter:image"
@@ -86,43 +87,158 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- FAQ Schema -->
+    <!-- Structured Data: WebSite & WebApplication -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
+      "@graph": [
         {
-          "@type": "Question",
-          "name": "What is a JSON formatter?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A JSON formatter converts compact or difficult-to-read JSON into a clean, structured, and readable format."
+          "@type": "WebSite",
+          "@id": "https://json-formatter-validator-osh2.vercel.app/#website",
+          "url": "https://json-formatter-validator-osh2.vercel.app/",
+          "name": "JSON Formatter & Validator",
+          "description": "A fast, clean browser-based JSON formatter and validator. Format, beautify, validate and minify JSON with helpful syntax error information."
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://json-formatter-validator-osh2.vercel.app/#webapp",
+          "name": "JSON Formatter & Validator",
+          "url": "https://json-formatter-validator-osh2.vercel.app/",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "description": "Format, beautify, validate, and minify JSON data directly in your browser with real-time error detection and custom indentation.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
           }
         },
         {
-          "@type": "Question",
-          "name": "How do I validate JSON?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Paste your JSON into the editor and select Validate JSON. The tool checks the JSON syntax and indicates whether the data is valid."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is this JSON formatter free?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The JSON formatting, validation, beautify, and minify features are available directly in the browser."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is my JSON uploaded to a server?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. The tool processes JSON locally in the user's browser and does not upload the JSON to a server."
-          }
+          "@type": "FAQPage",
+          "@id": "https://json-formatter-validator-osh2.vercel.app/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is JSON?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "JSON (JavaScript Object Notation) is a lightweight, text-based data interchange format that is easy for humans to read and write and simple for machines to parse and generate."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is a JSON formatter?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A JSON formatter is a tool that converts unformatted, minified, or disorganized JSON text into a neatly indented and readable structure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is a JSON validator?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A JSON validator checks whether JSON data complies with official syntax rules and reports errors such as missing commas or mismatched brackets."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I format JSON?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Paste your JSON into the input editor on this page, choose your preferred indentation size, and click “Format JSON”."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I check whether JSON is valid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Paste your data into the editor and click “Validate JSON”. The tool displays a green confirmation if it is valid or provides the line and column number of any syntax error."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is JSON beautification?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "JSON beautification is the process of adding consistent indentation, line breaks, and spacing to make JSON clean, readable, and easy to inspect."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is JSON minification?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "JSON minification removes all non-essential whitespace, line breaks, and indent spaces to create the smallest possible payload size for storage or transmission."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I choose indentation size?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You can switch between 2 spaces, 4 spaces, and tab indentation using the indentation selector in the toolbar."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I format nested JSON?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The formatter supports deeply nested objects, arrays, and complex hierarchies, indenting each level cleanly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I validate JSON before using it in an API?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Validating your payload before sending it to an API helps avoid common HTTP 400 Bad Request responses caused by syntax errors."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does JSON formatter require installation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. The tool runs directly inside your web browser without installing any desktop software or browser extensions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is my JSON sent to a server?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. JSON formatting, validation, and minification are performed locally in the browser, and JSON content is not intentionally uploaded to a formatting server."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I use the tool on mobile devices?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The application is fully responsive and functions smoothly across mobile smartphones, tablets, laptops, and desktop computers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is JSON the same as JavaScript?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. While JSON syntax is derived from JavaScript object notation, JSON is a strict data format with stricter rules (e.g., keys must be double-quoted, no trailing commas, no functions or undefined values)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why is my JSON invalid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Common causes include missing commas between properties, single quotes around keys or strings instead of double quotes, trailing commas after the last item, or unmatched opening and closing braces."
+              }
+            }
+          ]
         }
       ]
     }

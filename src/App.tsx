@@ -144,7 +144,7 @@ export default function App() {
           <div className="flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3">
             <span className="font-semibold text-slate-700">JSON Formatter &amp; Validator</span>
             <span className="hidden sm:inline text-slate-300">•</span>
-            <span className="text-slate-400">RFC 8259 Compliant &bull; 100% Client-Side</span>
+            <span className="text-slate-400">RFC 8259 Compliant &bull; In-Browser JSON Processing</span>
           </div>
 
           <nav aria-label="Site Pages" className="flex items-center gap-3 text-xs font-medium text-slate-600">
@@ -153,6 +153,8 @@ export default function App() {
             <a href="/about.html" className="hover:text-indigo-600 transition-colors">About Us</a>
             <span className="text-slate-300">|</span>
             <a href="/privacy.html" className="hover:text-indigo-600 transition-colors">Privacy Policy</a>
+            <span className="text-slate-300">|</span>
+            <a href="/terms.html" className="hover:text-indigo-600 transition-colors">Terms &amp; Conditions</a>
             <span className="text-slate-300">|</span>
             <a href="/contact.html" className="hover:text-indigo-600 transition-colors">Contact Us</a>
           </nav>
