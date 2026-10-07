@@ -37,7 +37,7 @@ export const StatusBanner: React.FC<StatusBannerProps> = ({ result, hasRunAction
                 </span>
               </div>
               <p className="text-xs text-emerald-700 mt-0.5">
-                The JSON syntax is completely well-formed and compliant with RFC 8259.
+                The JSON syntax is valid and follows standard JSON syntax rules.
               </p>
             </div>
           </div>

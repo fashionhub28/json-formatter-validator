@@ -158,7 +158,7 @@ export const SAMPLE_JSON = `{
     "Instant syntax validation",
     "Detailed error location detection",
     "One-click clipboard copy",
-    "100% browser-based & secure"
+    "Browser-based processing"
   ],
   "settings": {
     "indent": 2,
@@ -167,7 +167,6 @@ export const SAMPLE_JSON = `{
   },
   "metadata": {
     "author": "Browser Tools",
-    "downloads": null,
-    "rating": 5.0
+    "downloads": null
   }
 }`;

@@ -144,7 +144,7 @@ export default function App() {
           <div className="flex flex-col sm:flex-row items-center gap-1.5 sm:gap-3">
             <span className="font-semibold text-slate-700">JSON Formatter &amp; Validator</span>
             <span className="hidden sm:inline text-slate-300">•</span>
-            <span className="text-slate-400">RFC 8259 Compliant &bull; In-Browser JSON Processing</span>
+            <span className="text-slate-400">Designed to follow RFC 8259 JSON syntax &bull; In-Browser JSON Processing</span>
           </div>
 
           <nav aria-label="Site Pages" className="flex items-center gap-3 text-xs font-medium text-slate-600">
