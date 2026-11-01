@@ -100,6 +100,7 @@ export const InputPanel: React.FC<InputPanelProps> = ({
           value={value}
           onChange={(e) => onChange(e.target.value)}
           onKeyDown={handleTabKey}
+          aria-label="Raw JSON input editor"
           placeholder={`// Paste or write raw JSON here...\n{\n  "example": "paste your JSON here"\n}`}
           spellCheck={false}
           className="w-full flex-1 p-4 bg-slate-950 text-slate-100 font-mono text-sm leading-relaxed resize-none focus:outline-none focus:ring-0 placeholder:text-slate-600 selection:bg-indigo-500 selection:text-white"

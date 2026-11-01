@@ -9,11 +9,11 @@ import { formatJSON, validateJSON, SAMPLE_JSON } from './utils/jsonUtils';
 import { IndentOption, JSONValidationResult } from './types';
 
 export default function App() {
-  const [inputJson, setInputJson] = useState<string>('');
+  const [inputJson, setInputJson] = useState<string>(SAMPLE_JSON);
   const [indent, setIndent] = useState<IndentOption>('2');
-  const [validationResult, setValidationResult] = useState<JSONValidationResult | null>(null);
-  const [hasRunAction, setHasRunAction] = useState<boolean>(false);
-  const [actionType, setActionType] = useState<'format' | 'validate' | null>(null);
+  const [validationResult, setValidationResult] = useState<JSONValidationResult | null>(() => formatJSON(SAMPLE_JSON, '2'));
+  const [hasRunAction, setHasRunAction] = useState<boolean>(true);
+  const [actionType, setActionType] = useState<'format' | 'validate' | null>('format');
 
   const handleFormat = useCallback(() => {
     setHasRunAction(true);
@@ -150,13 +150,13 @@ export default function App() {
           <nav aria-label="Site Pages" className="flex items-center gap-3 text-xs font-medium text-slate-600">
             <a href="/" className="hover:text-indigo-600 transition-colors">Home</a>
             <span className="text-slate-300">|</span>
-            <a href="/about.html" className="hover:text-indigo-600 transition-colors">About Us</a>
+            <a href="/about" className="hover:text-indigo-600 transition-colors">About Us</a>
             <span className="text-slate-300">|</span>
-            <a href="/privacy.html" className="hover:text-indigo-600 transition-colors">Privacy Policy</a>
+            <a href="/privacy" className="hover:text-indigo-600 transition-colors">Privacy Policy</a>
             <span className="text-slate-300">|</span>
-            <a href="/terms.html" className="hover:text-indigo-600 transition-colors">Terms &amp; Conditions</a>
+            <a href="/terms" className="hover:text-indigo-600 transition-colors">Terms &amp; Conditions</a>
             <span className="text-slate-300">|</span>
-            <a href="/contact.html" className="hover:text-indigo-600 transition-colors">Contact Us</a>
+            <a href="/contact" className="hover:text-indigo-600 transition-colors">Contact Us</a>
           </nav>
         </div>
 

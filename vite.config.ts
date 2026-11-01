@@ -18,13 +18,13 @@ function sitemapPlugin(): Plugin {
     } else if (url === '/robots.txt') {
       targetFile = 'robots.txt';
       contentType = 'text/plain; charset=utf-8';
-    } else if (url === '/about' || url === '/about.html') {
+    } else if (url === '/about' || url === '/about/' || url === '/about.html') {
       targetFile = 'about.html';
-    } else if (url === '/privacy' || url === '/privacy.html') {
+    } else if (url === '/privacy' || url === '/privacy/' || url === '/privacy.html') {
       targetFile = 'privacy.html';
-    } else if (url === '/terms' || url === '/terms.html') {
+    } else if (url === '/terms' || url === '/terms/' || url === '/terms.html') {
       targetFile = 'terms.html';
-    } else if (url === '/contact' || url === '/contact.html') {
+    } else if (url === '/contact' || url === '/contact/' || url === '/contact.html') {
       targetFile = 'contact.html';
     } else if (url === '/favicon.png') {
       targetFile = 'favicon.png';
