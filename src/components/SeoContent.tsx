@@ -106,7 +106,6 @@ export const SeoContent: React.FC = () => {
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Valid Example */}
             <div>
               <h3 className="font-semibold text-slate-900 text-sm mb-2 flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
@@ -132,7 +131,6 @@ export const SeoContent: React.FC = () => {
               </p>
             </div>
 
-            {/* Invalid Example */}
             <div>
               <h3 className="font-semibold text-slate-900 text-sm mb-2 flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-rose-500"></span>
@@ -165,7 +163,6 @@ export const SeoContent: React.FC = () => {
           </p>
 
           <div className="space-y-4 max-w-4xl">
-            {/* 5.1 Single Quotes */}
             <div className="p-4 rounded-lg bg-slate-50 border border-slate-200">
               <h3 className="font-semibold text-slate-900 text-sm sm:text-base mb-1">
                 5.1 Single Quotes Instead of Double Quotes
@@ -185,7 +182,6 @@ export const SeoContent: React.FC = () => {
               </div>
             </div>
 
-            {/* 5.2 Trailing Commas */}
             <div className="p-4 rounded-lg bg-slate-50 border border-slate-200">
               <h3 className="font-semibold text-slate-900 text-sm sm:text-base mb-1">
                 5.2 Trailing Commas After the Last Item
@@ -205,7 +201,6 @@ export const SeoContent: React.FC = () => {
               </div>
             </div>
 
-            {/* 5.3 Missing Commas */}
             <div className="p-4 rounded-lg bg-slate-50 border border-slate-200">
               <h3 className="font-semibold text-slate-900 text-sm sm:text-base mb-1">
                 5.3 Missing Commas Between Properties
@@ -225,7 +220,6 @@ export const SeoContent: React.FC = () => {
               </div>
             </div>
 
-            {/* 5.4 Unquoted Property Keys */}
             <div className="p-4 rounded-lg bg-slate-50 border border-slate-200">
               <h3 className="font-semibold text-slate-900 text-sm sm:text-base mb-1">
                 5.4 Unquoted Property Keys
@@ -245,7 +239,6 @@ export const SeoContent: React.FC = () => {
               </div>
             </div>
 
-            {/* 5.5 Unsupported JavaScript Types and Comments */}
             <div className="p-4 rounded-lg bg-slate-50 border border-slate-200">
               <h3 className="font-semibold text-slate-900 text-sm sm:text-base mb-1">
                 5.5 Unsupported Types (undefined, NaN, Infinity) and Comments
@@ -266,8 +259,7 @@ export const SeoContent: React.FC = () => {
             </div>
           </div>
         </article>
-
-        {/* Section 6: JSON Objects, Arrays and Data Types */}
+                {/* Section 6: JSON Objects, Arrays and Data Types */}
         <article className="rounded-xl bg-white border border-slate-200 p-6 sm:p-8 shadow-xs">
           <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-4">
             6. JSON Objects, Arrays and Data Types
@@ -374,7 +366,7 @@ export const SeoContent: React.FC = () => {
               JSON formatting, validation, and minification are performed locally in your browser. The entered JSON is not intentionally uploaded to a server for processing. All data transformations execute within your browser&apos;s JavaScript engine.
             </p>
             <p>
-              To maintain transparency, please note that like most modern web utilities, standard external services like Google Analytics and Google AdSense make typical network requests for site measurement and ad delivery if active. However, your entered JSON content remains strictly within your browser session.
+              To maintain transparency, please note that like most modern web utilities, standard external services like Google Analytics and Google AdSense make typical network requests for site measurement and ad delivery if active. Your JSON input is processed locally in your browser and is not intentionally sent to our server for processing. However, avoid entering passwords, API keys, or other confidential information.
             </p>
             <div className="p-4 rounded-lg bg-amber-50/70 border border-amber-200 text-amber-900 text-sm">
               <p className="font-semibold mb-1">Security Best Practice Notice:</p>
@@ -458,7 +450,7 @@ export const SeoContent: React.FC = () => {
                 What is JSON minification?
               </h3>
               <p className="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed max-w-4xl">
-                JSON minification removes all non-essential whitespace, line breaks, and indent spaces to create the smallest possible payload size for storage or transmission.
+                JSON minification removes unnecessary whitespace, such as spaces and line breaks outside string values, to reduce the size of JSON text. It does not guarantee the smallest possible payload after compression.
               </p>
             </div>
 
